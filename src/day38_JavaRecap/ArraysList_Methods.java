@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArraysList_Methods {
-    // remove size set get equals coantains clear
+    // remove size set get equals coantains clear.
 
     public static void main(String[] args) {
 
