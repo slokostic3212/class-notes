@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 
-public class Collection_Utility {
+public class Collections_Utility {
 /*
 collections clas
     Collections.sort() -  in ascending order
