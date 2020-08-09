@@ -1,9 +1,11 @@
 package day39_CustomClass;
 
 public class Car {
-    /*Attributes;
-        model brand mileage color year price
+     /*
+        Attributes:
+            model, brand, year, color, mileage, price
      */
+
 
     String brand;
     String model;
@@ -12,27 +14,36 @@ public class Car {
     double mileage;
     double price;
 
-    public void seInfor(String carBrand, String carModel, int carYear, String carColor, double carMileage,
-                        double carPrice ){
-                                                // has static - not an instance method -
-                                                // attributes need instance variables
-                                                // actions/fxns need instance method
-                            // need static gone so to use instance to get 1 copy for each object
+    public void setCarInfo(String carBrand, String carModel, int carYear, String carColor, double carMileage, double carPrice) {
         brand = carBrand;
         model = carModel;
         year = carYear;
         color = carColor;
         mileage = carMileage;
         price = carPrice;
+    }
+    // sets the info of the car objects
 
 
+    // 2012 Toyota Corolla, Red, 10000, $45000
+    public void getCarInfo() {
+        System.out.println(year + " " + brand + " " + model + ", " + color + ", " + mileage + ", $" + price);
+    }
+    // prints the car info
 
+
+    public void start(){
+        System.out.println(brand+" "+model+" is started");
+    }
+
+    /*
+    car1: Toyota
+    car2: BMW
+    car3: Tesla
+     */
 
     }
-/* car1 - Toyota
-    car2 - BMW
- */
 
 
 
-}
+
