@@ -1,40 +1,50 @@
 package day39_CustomClass;
-/*
- Dog:
- 	instance variables:
- 		breed size age color
-
- 	instance methods:
- 		setDogInfo()	getDogInfo()  eat drink sleep ...
- */
 public class Dog {
+    /*
+        instance variables:
+                name, breed, size, age, color
+        instance methods:
+                setDogInfo, getDogInfo, eat, drink, sleep
+     */
     String name;
     String breed;
     String size;
     int age;
     String color;
 
-    //this sets the info of the dog by assigning argum to variables of dog
-    public void setDogInfo(String dogBreed, String dogSize, int dogAge, String dogColor, String dogName){
-
+    public void setDogInfo(String dogName, String dogBreed, String dogSize, int dogAge, String dogColor){
         breed = dogBreed;
         size = dogSize;
         age = dogAge;
         color = dogColor;
         name = dogName;
-
-    // sets the information of the dog
-        public void getDogInfo(){
-            System.out.println("Name: "+name+", Breed: "+breed+", Size: "+size+", Color: "+color+", Age: "+age+" years old");
-        }
-
-      /*
-      dog1: husky
-      dog2: pitbull
-      dog3: golden
-       */
-
-
     }
+    // sets the info of the dog
+
+
+    public void getDogInfo(){
+        System.out.println("Name: "+name+", Breed: "+breed+", Size: "+size+", Color: "+color+", Age: "+age+" years old");
+    }
+    // prints the dog info
+
+    public void eat(String food){
+        System.out.println(name+" is eating "+food);
+    }
+
+    public void drink(String drink){
+        System.out.println(name+" is drinking "+drink);
+    }
+
+    public void sleep(){
+        System.out.println(name+" is sleeping");
+    }
+
+
+    /*
+  Dog:
+    dog1: husky
+    dog2: pitbull
+    dog3: golden retriever
+     */
 
 }
