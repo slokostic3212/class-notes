@@ -38,9 +38,11 @@ public class BankAccount {
 
         }
         public void deposit(double amount){
+            System.out.println("Depositing $"+amount+" to "+accountNumber);
           balance += amount;
         }
         public void withDraw(double amount){
+          System.out.println("Withdrawing $"+amount+" from "+accountNumber);
           balance -= amount;
         }
 
