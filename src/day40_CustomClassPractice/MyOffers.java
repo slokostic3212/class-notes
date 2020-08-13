@@ -40,7 +40,8 @@ public class MyOffers {
 
         //does not have PTO or does not have benefit or it not full time
 
-        jobOffers.removeIf( p -> p.hasPTO == false || p.hasBenefit == false || p.isFullTime == false);
+        jobOffers.removeIf( p -> p.hasPTO == false || p.hasBenefit == false || p.isFullTime == false
+                || p.salary <120000);
         System.out.println("Number of Offers: "+jobOffers.size());
 
     }
