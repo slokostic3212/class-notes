@@ -29,6 +29,20 @@ public class MyOffers {
             eachOffer.getOfferInfo();
         }
 
+        System.out.println("======================================");
+        //less than 120k;
+        //jobOffers.removeIf( p->p.salary < 12000 );
+        //System.out.println("Number of offers: "+jobOffers.size());
+
+        //less than
+        // jobOffers.removeIf(p -> p.salary <12000 || p.state.equals("VA") || !p.state.equals("VA"));
+        //System.out.println("Number of Offers: "+jobOffers.size());
+
+        //does not have PTO or does not have benefit or it not full time
+
+        jobOffers.removeIf( p -> p.hasPTO == false || p.hasBenefit == false || p.isFullTime == false);
+        System.out.println("Number of Offers: "+jobOffers.size());
+
     }
 
 }
