@@ -2,6 +2,8 @@ package day41_Static;
 
 import com.sun.corba.se.impl.encoding.CDROutputObject;
 
+import java.text.DecimalFormat;
+
 /*
 1. create a custom class for the carpet class that should contain the following:
 		instance variables:
@@ -40,6 +42,7 @@ public class Carpet {
     }
 
     public void getCarpetInfo(){
+       // DecimalFormt df = new DecimalFormat();
         System.out.println("=============================");
         System.out.println("Width: "+width);
         System.out.println("Length: "+ length);
