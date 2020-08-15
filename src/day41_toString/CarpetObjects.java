@@ -1,4 +1,4 @@
-package day41_Static;
+package day41_toString;
 /*
  create a class called carpetObjects, and create an array of the carpet that contains 5 carpet objects ( make sure you set the instance variables of those objects)
             create two ArrayList of carpets:
@@ -10,8 +10,6 @@ package day41_Static;
                     use for each loop to print out all the Persian carpets
 
  */
-
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 import java.util.ArrayList;
 
