@@ -22,6 +22,8 @@ package day42_static;
 
                             removeDeveloper(long employeeID): removes the developer from the developers arraylist
 
+                            toString(): prints number of tester,& developers,  PO name, SM name, BA name
+
  */
 import java.util.ArrayList;
 import java.util.Arrays;
