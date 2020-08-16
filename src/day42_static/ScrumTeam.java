@@ -30,52 +30,57 @@ import java.util.Arrays;
 
 public class ScrumTeam {
 
-    ArrayList<Tester> testers = new ArrayList<>();
+    ArrayList<Tester> testers = new ArrayList<>();// use arrays list becuz u have multiple names in both teams
     ArrayList<Developer> developers = new ArrayList<>();
     String PO;
     String BA;
     String SM;
 
-    public void setInfo( String PO, String BA, String SM){
+    public void setInfo(String PO, String BA, String SM) {
         this.PO = PO;
         this.BA = BA;
         this.SM = SM;
-
-        /*
-        team1 add tester only adds to the specific team 1 2 or 3 == need instance method
-        team2
-        team3
-         */
-
-
     }
-    public void addTester(Tester tester){// how do i add this tester to add arraylist = addmehtod
+
+    public void addTester(Tester tester) {
         testers.add(tester);
-
-    }
-    public void addTesters(Tester[] testers) {//if i remove s from addTesters mehtod overloading same name but diff parameters
-    /*    //if(testers.length ==0){
-        return;
     }
 
-     */
-        this.testers.addAll( Arrays.asList(testers));
-    }
-    public void removeTester(long employeeID){
-        testers.removeIf( p -> p.employeeID == employeeID );//can also use this. keyword yet not recommended
-                                            // this one cks ea employee id
+    public void addTester(Tester[] testers) {
+        if (testers.length == 0) {
+            return;
+        }
+        this.testers.addAll(Arrays.asList(testers));
     }
 
-    public void addDeveloper(Developer developer){
+    public void removeTester(long employeeID) { // 007
+        testers.removeIf(p -> p.employeeID == employeeID);
+        //              each employee id,  == 007
+    }
+
+    public void addDeveloper(Developer developer) {
         developers.add(developer);
     }
-    public void addDeveloper(Developer[] developers){
-        if(developers.length == 0){
-            return;            //use this if no devs in list and exit this fxn
+
+    public void addDeveloper(Developer[] developers) {
+        if (developers.length == 0) { // to check if the array is empty
+            return;
         }
-        this.developers.addAll( Arrays.asList(developers) );
+        this.developers.addAll(Arrays.asList(developers));
     }
-    public void removeDeveloper(long employeeID){
-        developers.removeIf( p -> p.employeeID == employeeID );// p = each dev object use p. to get obj name
+
+    public void removeDeveloper(long employeeID) {
+        developers.removeIf(p -> p.employeeID == employeeID);
     }
+
+
+    public String toString() {
+        return testers.size() + " testers, " + developers.size() + " developers, PO: " + PO + ", BA: " + BA + ", SM: " + SM;
+    }
+
+    /*
+    team1
+    team2
+    team3
+     */
 }
