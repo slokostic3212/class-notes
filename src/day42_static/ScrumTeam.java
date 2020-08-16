@@ -29,7 +29,7 @@ import java.util.Arrays;
 public class ScrumTeam {
 
     ArrayList<Tester> testers = new ArrayList<>();
-    ArrayList<Developer> developer = new ArrayList<>();
+    ArrayList<Developer> developers = new ArrayList<>();
     String PO;
     String BA;
     String SM;
@@ -51,7 +51,12 @@ public class ScrumTeam {
         testers.add(tester);
 
     }
-    public void addTesters(Tester[] testers){//if i remove s from addTesters mehtod overloading same name but diff parameters
+    public void addTesters(Tester[] testers) {//if i remove s from addTesters mehtod overloading same name but diff parameters
+    /*    //if(testers.length ==0){
+        return;
+    }
+
+     */
         this.testers.addAll( Arrays.asList(testers));
     }
     public void removeTester(long employeeID){
@@ -59,5 +64,16 @@ public class ScrumTeam {
                                             // this one cks ea employee id
     }
 
-
+    public void addDeveloper(Developer developer){
+        developers.add(developer);
+    }
+    public void addDeveloper(Developer[] developers){
+        if(developers.length == 0){
+            return;            //use this if no devs in list and exit this fxn
+        }
+        this.developers.addAll( Arrays.asList(developers) );
+    }
+    public void removeDeveloper(long employeeID){
+        developers.removeIf( p -> p.employeeID == employeeID );// p = each dev object use p. to get obj name
+    }
 }
