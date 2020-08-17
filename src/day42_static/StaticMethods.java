@@ -2,7 +2,7 @@ package day42_static;
 
 public class StaticMethods {
     int a = 200;
-    static int b = 400;
+    static int b= 400;
 
     public static void main(String[] args) {
         System.out.println(b);
@@ -10,7 +10,7 @@ public class StaticMethods {
         // System.out.println(this.a);
 
         StaticMethods obj = new StaticMethods();
-        System.out.println(obj.a);
+        System.out.println( obj.a );
         // the ONLY way to call instances in a static method
 
         staticMethod();
@@ -23,15 +23,12 @@ public class StaticMethods {
     }
 
 
-    public static void staticMethod() {
+
+    public static void staticMethod(){
 
     }
 
-    public void instanceMethod() {
-
-    }
-
-    public void instancemethod() {
+    public void instanceMethod(){
 
     }
 }

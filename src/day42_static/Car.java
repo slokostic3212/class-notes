@@ -25,9 +25,19 @@ public class Car {
         System.out.println(numberOfTires+" Tires");
     }
 
-    public String toString() {
-        return "Brand: " + brand + ", Model: " + model + ", Year: " + year + ", Color: " + color
-                + "\nNumber of tires: " + numberOfTires + "\nHas Engine: " + hasEngine
-                + "\nHas Wheel: " + hasWheel + "\nHas Airbags: " + hasAirBag;
+    public String toString(){
+        return "Brand: "+brand+", Model: "+model+", Year: "+year+", Color: "+color
+                +"\nNumber of tires: "+numberOfTires+"\nHas Engine: "+hasEngine
+                +"\nHas Wheel: "+hasWheel+"\nHas Airbags: "+hasAirBag;
+    }
+
+
+
+    /*
+    car1:
+    car2:
+    car3:
+    car4:
+     */
     }
 }
