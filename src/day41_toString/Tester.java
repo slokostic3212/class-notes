@@ -32,5 +32,9 @@ public class Tester {
 
     public String toString(){
         return "Name: "+name+", Gender: "+gender+", Age: "+age+", Salary: "+salary;
+
+
     }
 }
+
+

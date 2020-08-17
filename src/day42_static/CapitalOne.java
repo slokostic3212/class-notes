@@ -1,5 +1,5 @@
 package day42_static;
-
+/*
 public class CapitalOne {
     public static void main(String[] args) {
         Tester[] testers = { new Tester(), new Tester(), new Tester() };
@@ -60,11 +60,10 @@ public class CapitalOne {
         /*
         print all developers and testers from scrum team
         find the maximum salary
-*/
-
-
 
 
     }
 
 }
+
+ */
