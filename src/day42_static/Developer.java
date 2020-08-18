@@ -14,8 +14,7 @@ public class Developer {
     long employeeID;
     String jobTitle;
     double salary;
-
-    public void setInfo( String name, char gender, long employeeID, String jobTitle, double salary){
+    public void setInfo(String name, char gender, long employeeID, String jobTitle, double salary){
         this.name = name;
         this.gender = gender;
         this.employeeID = employeeID;
@@ -28,8 +27,8 @@ public class Developer {
     public void fixBug(){
         System.out.println(name+" is fixing the bug");
     }
-
     public String toString(){
-        return "Name: "+name+", Gender: "+gender+", Job Title: "+jobTitle+", Salary: "+salary+", Employee ID: "+employeeID;
+        return"Name: "+name+", Gender: "+gender+", Job title: "+jobTitle
+                +", Salary: "+salary+",Employee ID: "+employeeID;
     }
 }
