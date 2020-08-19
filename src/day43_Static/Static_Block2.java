@@ -26,6 +26,8 @@ public class Static_Block2 {
         System.out.println(a);
         System.out.println(b);
 
- */
+
     }
 
+ */
+}
