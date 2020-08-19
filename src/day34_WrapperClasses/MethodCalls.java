@@ -1,7 +1,7 @@
 package day34_WrapperClasses;
 
 
-import Libray.Util;
+import Library.Util;
 
 import java.util.Arrays;
 

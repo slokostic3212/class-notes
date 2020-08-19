@@ -1,4 +1,4 @@
-package Libray;
+package Library;
 
 public class Resources {
 
@@ -6,13 +6,13 @@ public class Resources {
     int b = 300;
 
     public static void method1(){
-        System.out.println("static method");
+        System.out.println("Static method");
 
 
     }
 
     public void method2(){
-        System.out.println("instance method");
+        System.out.println("Instance method");
 
     }
 }

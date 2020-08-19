@@ -1,7 +1,7 @@
 package day31_Recap;
 
 
-import Libray.Util;
+import Library.Util;
 
 public class FrequencyOfCharacters {
 

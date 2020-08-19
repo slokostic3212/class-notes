@@ -1,6 +1,6 @@
 package day37_ArrayList;
 
-import Libray.Util;
+import Library.Util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
