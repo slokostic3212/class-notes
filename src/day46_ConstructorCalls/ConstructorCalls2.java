@@ -27,7 +27,7 @@ public class ConstructorCalls2 {
 
     public ConstructorCalls2(double a){
         System.out.println("E");
-        // this(10)
+        // this(10)// if at first step before sout then it would work
     }
 
     public static void main(String[] args) {

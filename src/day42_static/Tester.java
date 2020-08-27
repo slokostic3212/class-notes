@@ -1,4 +1,7 @@
 package day42_static;
+
+import org.omg.PortableInterceptor.ServerRequestInfo;
+
 /*
  create a class called Testers
                     Attributes:
@@ -12,21 +15,27 @@ public class Tester {
     long employeeID;
     String jobTitle;
     double salary;
-    public void setInfo(String name, char gender, long employeeID, String jobTitle, double salary){
+
+    public void setInfo(String name, char gender, long employeeID, String jobTitle, double salary) {
         this.name = name;
         this.gender = gender;
         this.employeeID = employeeID;
         this.jobTitle = jobTitle;
         this.salary = salary;
     }
-    public void smokeTesting(){
-        System.out.println(name+" smoke testing");
+
+    public void smokeTesting() {
+        System.out.println(name + " smoke testing");
     }
-    public void creatingTicket(){
-        System.out.println(name+" is creating ticket");
+
+    public void creatingTicket() {
+        System.out.println(name + " is creating ticket");
     }
-    public String toString(){
-        return"Name: "+name+", Gender: "+gender+", Job title: "+jobTitle
-                +", Salary: "+salary+",Employee ID: "+employeeID;
+
+    public String toString() {
+        return "Name: " + name + ", Gender: " + gender + ", Job title: " + jobTitle
+                + ", Salary: " + salary + ",Employee ID: " + employeeID;
     }
 }
+
+
