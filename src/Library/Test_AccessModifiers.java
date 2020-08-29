@@ -13,6 +13,9 @@ public class Test_AccessModifiers {
                                                             // so not visible here
                                                                // need to chg acc mod to public
         // AccessModifiers.defaultMethod;
+
+        //System.out.println(AccessModifiers.privateVariable);//get compile error cuz not visible outside of pkg
+        //AccessModifiers.privateMethod;        //get compile error cuz not visible outside of pkg
     }
 
 }
