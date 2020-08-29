@@ -8,6 +8,11 @@ public class Test_AccessModifiers {
 
         System.out.println(AccessModifiers.publicVariable);
         AccessModifiers.publicMethod();
+
+       // System.out.println( AccessModifiers.defaultVariable);//access mod of default - - only visibe in same pkg
+                                                            // so not visible here
+                                                               // need to chg acc mod to public
+        // AccessModifiers.defaultMethod;
     }
-    static int i = 200;
+
 }

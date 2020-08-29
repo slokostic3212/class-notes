@@ -9,5 +9,11 @@ public class AccessModifiers {
 
     }
 
+    //default
 
+    static int defaultVariable = 200;
+
+    static void defaultMehtod(){
+        System.out.println("default method");
+    }
 }

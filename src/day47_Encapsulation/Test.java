@@ -6,5 +6,11 @@ public class Test {
 
         System.out.println(AccessModifiers.publicVariable);
         AccessModifiers.publicMethod();
+
+        System.out.println( AccessModifiers.defaultVariable );
+        AccessModifiers.defaultMehtod();
+
+
     }
+
 }
