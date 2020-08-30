@@ -22,7 +22,6 @@ public class Student {
 
     }
 */
-
     public String toString(){
         return "Name: "+name+", Age: "+age+", Gender: "+gender+", School Name: "+schoolName;
     }

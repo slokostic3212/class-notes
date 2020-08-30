@@ -1,5 +1,10 @@
 package day44_Constructor;
-
+/*
+declare:										no specifier or returnType in constructor
+			Access-Modifier    className(Parameters){
+			  statements;
+			}
+ */
 
 
 public class ConstructorIntro {
