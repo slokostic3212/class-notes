@@ -1,4 +1,4 @@
-package day_30_CustomMethods2;
+package day30_CustomMethods2;
 /* 1. create a function that can print out the maximum number between two numbers
    2. create a function that can print out the array of integers in descending order
    3. create a function that can print out the combination of two integer arrays

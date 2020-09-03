@@ -1,4 +1,4 @@
-package day_30_CustomMethods2;
+package day30_CustomMethods2;
 
 public class Recap {
 
