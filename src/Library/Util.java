@@ -525,7 +525,13 @@ public class Util {
     }
     // combines two array and returns it
 
+        public static void sleep (int seconds){
+            try{
+                Thread.sleep(seconds * 100);
+            }catch ( InterruptedException e ){
 
+            }
+        }
 
 }
 
