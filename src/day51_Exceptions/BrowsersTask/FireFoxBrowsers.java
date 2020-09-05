@@ -1,6 +1,6 @@
 package day51_Exceptions.BrowsersTask;
 
-public class FireFoxBrowsers extends {
+public class FireFoxBrowsers extends WebDriver {
     public void get(String url) {
         System.out.println("Opening the " + url + " in firefox browser");
 

@@ -2,6 +2,7 @@ package day51_Exceptions.BrowsersTask;
 
 public class BrowserObjects {
 
+
     public static void main(String[] args) {
 
         ChromeBrowser chrome = new ChromeBrowser();
@@ -10,10 +11,18 @@ public class BrowserObjects {
 
         System.out.println("=====================================");
 
-        FireFoxBrowser firefox = new FireFoxBrowser();
+        FireFoxBrowsers firefox = new FireFoxBrowsers();
         firefox.get("https://www.google.com/");
         firefox.close();
 
+        System.out.println("=====================================");
+
+        OperaBrowser opera = new OperaBrowser();
+        opera.get("https://www.google.com/");
+        opera.close();
+
 
     }
+
 }
+
