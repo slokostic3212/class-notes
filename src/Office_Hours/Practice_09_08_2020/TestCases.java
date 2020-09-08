@@ -20,14 +20,14 @@ public class TestCases {
 
         System.out.println("============================================");
 
-        System.out.println("Pass Word Entered: "+c1.getPassWord());
+        System.out.println("Pass Word Entered: "+c1.getUserName());
 
         // c1.passWord = "JavaTurtles";
 
-        c1.setPassWord("JavaTurtles");
+        c1.setUserName("JavaTurtles");
 
-        System.out.println("New Pass Word Entered: "+ c1.getPassWord());
-        System.out.println("New Pass Word Entered Again: "+c1.getPassWord());
+        System.out.println("New Pass Word Entered: "+ c1.getUserName());
+        System.out.println("New Pass Word Entered Again: "+c1.getUserName());
 
 
 
@@ -40,7 +40,6 @@ public class TestCases {
         return userName;
     }
 */
-
 }
 
 
