@@ -25,6 +25,8 @@ public class ThrowsPractice {
         // causes the current execution thread to sleep for given seconds
 
     }
-
+    public static void m4() {
+        m3();
 
     }
+}
