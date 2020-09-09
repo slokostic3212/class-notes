@@ -9,40 +9,45 @@ public class MultiCatchBlock {
         int[] arr = {10,20};
 
         try {
+            System.out.println(arr[20]); // ArrayIndexOutOfBound
 
-            System.out.println(arr[20]);// arrayindexoutofbound
+        }catch(ArithmeticException e){
+            System.out.println("Arithmetic Exception is handled");
 
-        } catch (ArithmeticException e) {
-            System.out.println("arithmetic exception is handled");
-        }catch (ClassCastException e){
-            System.out.println("class cast exception");
+        }catch(ClassCastException e){
+            System.out.println("Class Cast Exception");
 
         }catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("array index out of bound exception");
-        }catch (IndexOutOfBoundsException e) {
-            System.out.println("index out of bound exception");//
+            System.out.println("Array Index Out of Bound Exception");
+
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("Index Out Of Bound Exception");
+
         }catch (RuntimeException e){
-            System.out.println("run time exception");
-        }//catch (NoSuchElementException e){
-        System.out.println("====================================");
+            System.out.println("Run Time Exception");
 
-        String  str = "Cybertek";
+        } // catch(NoSuchElementException e){ }
+
+        System.out.println("=====================================");
+
+        String str = "Cybertek";
         try {
-
-            System.out.println(str.charAt(200));// unckd occurs during runtium
-        }catch(RuntimeException e){// can handle any uncked exception
+            System.out.println(str.charAt(200));
+        }catch(RuntimeException e){  // runtimeexception can handle any unchecked exception
             System.out.println(e.getMessage());
         }
 
-        System.out.println("========================");
-        try{
+        System.out.println("=====================================");
+        try {
+            Thread.sleep(3000);
+        }catch (Exception e){
 
-        Thread.sleep(3000);
+        }
 
-        }catch(InterruptedException e) {
-        }
-        System.out.println("completed");
-        }
+
+        System.out.println("Completed");
+    }
+
 
     }
 
