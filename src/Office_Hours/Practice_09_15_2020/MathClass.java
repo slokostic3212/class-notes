@@ -1,7 +1,5 @@
 package Office_Hours.Practice_09_15_2020;
 
-import java.util.Random;
-
 public class MathClass {
     public static void main(String[] args) {
         //10*10*10
