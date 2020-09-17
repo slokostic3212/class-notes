@@ -7,7 +7,7 @@ package day55_Abstraction.ShapesTask;
             add a constructor that takes an argument for radius of the circle and initialize the instance variables: radius, area, perimeter, volume
             add a static block that can initialize the static variables of the circle
  */
-public class Circle extends Shape{
+public final class Circle extends Shape{
 
     public double radius;
 
@@ -18,10 +18,16 @@ public class Circle extends Shape{
      */
 
     public Circle(double radius){
+        if(radius <= 0){
+            throw new RuntimeException("Radius of the circle cannot be negative or 0");
+        }
+
         this.radius = radius;
         area = calculateArea();
         perimeter = calculatePerimeter();
         volume = calculateVolume();
+        name = "Rectangle";
+        hasVolume = false;
     }
 
     @Override
@@ -39,11 +45,8 @@ public class Circle extends Shape{
         return 0;
     }
 
-    static{
-        name = "Circle";
-        hasVolume = false;
 
-    }
+
     @Override
     public String toString() {
         return "Circle{" +
@@ -52,6 +55,7 @@ public class Circle extends Shape{
                 ", perimeter=" + perimeter +
                 ", volume=" + volume +
                 '}';
-
     }
+
+
 }

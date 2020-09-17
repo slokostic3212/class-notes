@@ -6,11 +6,12 @@ package day55_Abstraction.ShapesTask;
         abstract methods: calculateArea(), calculatePerimeter, calculateVolume()
                             return-types: double
  */
-public abstract class Shape { // cannot create an object and cannot be final can have abstract method
-    public static String name;
+public abstract class Shape { //cannot create object, cannot be final
+
+    public String name;
+    public boolean hasVolume;
     public double area;
     public double perimeter;
-    public static boolean hasVolume;
     public double volume;
 
     public abstract double calculateArea();
