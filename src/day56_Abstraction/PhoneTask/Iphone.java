@@ -1,13 +1,7 @@
 package day56_Abstraction.PhoneTask;
-/*
- 2. create the following subclasses of phone:
-                        1. IPhone
-                        2. Samsung
-            create constructors in each sub class that can initialize the instance variables
-            if the price of iPhone or Samsung set to 0 or negative, program should throw an exception during runtime with an error message of "Invalid Price"
 
- */
-public final class Iphoneb extends Phone{
+public final class Iphone extends Phone {
+
     public Iphone( String model, double price, String size) {
         super("Iphone", model, price, size);
         if(price<=0 || price> 1500){
@@ -54,6 +48,5 @@ public final class Iphoneb extends Phone{
     public void faceTiming(long num1, long num2){
         faceTiming(num1);
         faceTiming(num2);
-
     }
 }

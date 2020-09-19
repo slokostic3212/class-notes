@@ -7,13 +7,17 @@ package day56_Abstraction.PhoneTask;
             add a constructor that can initialize all the instances
  */
 public abstract class Phone {
+
     public String brand;
     public String model;
     public double price;
     public String size;
 
     public abstract void calling(long phoneNumber);
+    public abstract void calling(long num1, long num2);
+
     public abstract void texting(long phoneNumber);
+    public abstract void texting(long num1, long num2 );
 
 
     public String toString() {
@@ -23,13 +27,6 @@ public abstract class Phone {
                 ", price=" + price +
                 ", size='" + size + '\'' +
                 '}';
-    }
-
-    public Phone(String brand, String model, double price, String size) {
-        this.brand = brand;
-        this.model = model;
-        this.price = price;
-        this.size = size;
     }
 
     public Phone(String brand, String model, double price, String size) {
