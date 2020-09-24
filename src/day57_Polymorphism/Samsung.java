@@ -5,7 +5,7 @@ public class Samsung extends Phone implements Downloadable, AndroidApp{
 
     public Samsung(String model, String size, double price){
         super("Samsung", model, size, price);
-        throw new RuntimeException("Samsung's price cannot be greater than $1200");
+        throw new RuntimeException("Samsung's price cannot be greater than 1200");
 
     }
     @Override
@@ -27,7 +27,7 @@ public class Samsung extends Phone implements Downloadable, AndroidApp{
     }
 
     public void freezing(){
-        System.out.println("Samsung freezes");
+        System.out.println("Samsung is freezing");
 
     }
 
