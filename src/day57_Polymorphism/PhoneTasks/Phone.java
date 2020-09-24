@@ -1,4 +1,4 @@
-package day57_Polymorphism;
+package day57_Polymorphism.PhoneTasks;
 /*
  4. create an abstract class named Phone
             instance variables: brand, model, price, size
@@ -10,6 +10,7 @@ package day57_Polymorphism;
                     Invalid Price, cannot be negative
  */
 public abstract class Phone {
+
     public String brand, model, size;
     public double price;
 
@@ -17,8 +18,9 @@ public abstract class Phone {
         this.brand = brand;
         this.model = model;
         this.size = size;
-        if(price <= 0){
-            throw new RuntimeException("price of phone cannot be negative or 0");
+
+        if(price <=0){
+            throw new RuntimeException("Price of the phone cannot be negative or zero");
         }
 
         this.price = price;

@@ -1,4 +1,4 @@
-package day57_Polymorphism;
+package day57_Polymorphism.PhoneTasks;
 
 /*
  3. create an interface named AppleApp that can inherit from Downloadable
@@ -6,6 +6,6 @@ package day57_Polymorphism;
  */
 public interface AppleApp extends Downloadable {
 
-    String AppStoreName = "App Store";
-    // 1 abstract method
+    String AppStoreName = "App Store"; // public static final
+// 1 abstract method}
 }

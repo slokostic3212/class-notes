@@ -1,4 +1,4 @@
-package day57_Polymorphism;
+package day57_Polymorphism.PhoneTasks;
 
 public class Huawei extends Phone implements  AndroidApp, AppleApp, Downloadable{
 
@@ -35,7 +35,7 @@ public class Huawei extends Phone implements  AndroidApp, AppleApp, Downloadable
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", size='" + size + '\'' +
-                ", price= $ " + price +
+                ", price= $" + price +
                 '}';
     }
 }
