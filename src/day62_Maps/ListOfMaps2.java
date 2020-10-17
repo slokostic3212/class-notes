@@ -6,7 +6,6 @@ import java.util.*;
 public class ListOfMaps2 {
     public static void main(String[] args) {
 
-        public static void main (String[]args){
 
             String[] friends = {"Merhaba", "Rena", "Gulyar", "Arzugul", "Rukiye"};
             LocalDate[] DOBFriends = {LocalDate.of(1989, 8, 23),
@@ -51,4 +50,3 @@ public class ListOfMaps2 {
             System.out.println(list);
         }
     }
-}
