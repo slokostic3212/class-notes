@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class SetEntryForMap {
 
-    public class SetEntryForMap {
+
 
         public static void main(String[] args) {
 
@@ -36,6 +36,6 @@ public class SetEntryForMap {
 
         }
     }
-}
+
 
 
