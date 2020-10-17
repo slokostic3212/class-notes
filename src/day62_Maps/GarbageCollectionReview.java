@@ -1,6 +1,10 @@
 package day62_Maps;
 
+import day55_Abstraction.ShapesTask.Circle;
+import day55_Abstraction.ShapesTask.Rectangle;
+
 public class GarbageCollectionReview {
+
     public static void main(String[] args) {
         String str1 = "Cybertek"; // GC
         str1 = null;
@@ -54,4 +58,3 @@ public class GarbageCollectionReview {
     }
 
 }
-
